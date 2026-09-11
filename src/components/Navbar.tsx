@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Smartphone, Calculator, TableProperties, BookOpen, Menu, X, ShieldCheck } from 'lucide-react';
+import { Smartphone, Sparkles, TableProperties, BookOpen, Menu, X, ShoppingBag } from 'lucide-react';
+import { getAmazonSearchUrl } from '../data/foldables';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,19 +9,19 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Modellvergleich', href: '/vergleich', icon: TableProperties },
-    { name: 'Haltbarkeitsrechner', href: '/#rechner', icon: Calculator },
-    { name: 'Ratgeber & UTG', href: '/ratgeber', icon: BookOpen },
-    { name: 'Embed-Widget', href: '/rechner-embed', icon: Smartphone }
+    { name: 'Foldable-Finder', href: '/#finder', icon: Sparkles },
+    { name: 'Haltbarkeits-Check', href: '/#rechner', icon: Smartphone },
+    { name: 'Kaufberatung', href: '/ratgeber', icon: BookOpen }
   ];
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all">
-      {/* Top Banner Notice: Unabhängiges Fachportal */}
-      <div className="bg-slate-900 text-slate-300 text-xs py-1.5 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
-        <ShieldCheck className="w-3.5 h-3.5 text-amber-400 inline-block" />
-        <span>falttelefon.de – Unabhängige Marktübersicht &amp; Labor-Prüfwerte zu Falt-Smartphones</span>
+      {/* Top Banner Notice: Kaufberatung & Deals */}
+      <div className="bg-slate-900 text-slate-200 text-xs py-1.5 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
+        <ShoppingBag className="w-3.5 h-3.5 text-amber-400 inline-block" />
+        <span>falttelefon.de – Große Foldable-Kaufberatung 2026: Finde das perfekte Falt-Handy zum besten Preis</span>
         <span className="hidden md:inline text-slate-500">•</span>
-        <span className="hidden md:inline text-slate-400">Geprüft nach TÜV &amp; SGS Belastungsnormen</span>
+        <span className="hidden md:inline text-amber-400 font-bold">Mit aktuellen Amazon-Angeboten *</span>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,7 +37,7 @@ export default function Navbar() {
                 falttelefon<span className="text-amber-500">.de</span>
               </span>
               <span className="block text-[10px] uppercase font-mono tracking-widest text-slate-400 -mt-1">
-                Foldable Research &amp; Matrix
+                Kaufberater &amp; Preisvergleich
               </span>
             </div>
           </Link>
@@ -63,10 +64,13 @@ export default function Navbar() {
             })}
             
             <a
-              href="#rechner"
-              className="ml-3 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm shadow-sm transition-transform active:scale-95"
+              href={getAmazonSearchUrl('Foldable Smartphone Faltbar')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-3 inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm shadow-sm transition-transform active:scale-95"
             >
-              Rechner starten
+              <ShoppingBag className="w-4 h-4" />
+              <span>Angebote bei Amazon *</span>
             </a>
           </nav>
 
@@ -102,11 +106,14 @@ export default function Navbar() {
           })}
           <div className="pt-2">
             <a
-              href="#rechner"
+              href={getAmazonSearchUrl('Foldable Smartphone Faltbar')}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="w-full flex items-center justify-center px-4 py-3 rounded-xl bg-amber-500 text-slate-950 font-extrabold text-base shadow-sm"
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 text-slate-950 font-extrabold text-base shadow-sm"
             >
-              Faltzyklen-Rechner öffnen
+              <ShoppingBag className="w-4 h-4" />
+              <span>Angebote bei Amazon prüfen *</span>
             </a>
           </div>
         </div>

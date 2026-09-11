@@ -1,33 +1,34 @@
 import React from 'react';
 import CitationBox from '../components/CitationBox';
 import AdSensePlaceholder from '../components/AdSensePlaceholder';
-import { BookOpen, Layers, ShieldCheck, Wrench, AlertTriangle, FileText, CheckCircle2 } from 'lucide-react';
+import { FOLDABLE_ACCESSORIES, getAmazonSearchUrl } from '../data/foldables';
+import { BookOpen, ShieldCheck, ShoppingBag, CheckCircle2, HelpCircle, Smartphone, Zap } from 'lucide-react';
 
 export default function Ratgeber() {
   const glossary = [
     {
-      term: 'Ultra Thin Glass (UTG)',
-      desc: 'Biegbares Spezialglas mit einer Dicke von lediglich 30 bis 50 Mikrometern. Durch chemisches Härten (KNO3-Salzbad) elastisch verformbar, erfordert aber werkseitige PET-Schutzfolien gegen spitze Druckpunkte.'
+      term: 'Book-Style (Fold)',
+      desc: 'Smartphones wie das Samsung Galaxy Z Fold6 oder Honor Magic V3, die sich horizontal aufklappen lassen und ein großes Tablet-Display (7,6 bis 8,0 Zoll) im Inneren bieten.'
     },
     {
-      term: 'Wassertropfen-Scharnier (Waterdrop Hinge)',
-      desc: 'Mechanisches Gelenk, das das OLED-Panel beim Zusammenfalten im Inneren in eine tropfenförmige Schlaufe legt. Vergrößert den Biegeradius und verhindert das spitzwinklige Knicken.'
+      term: 'Clamshell (Flip)',
+      desc: 'Kompakte Falt-Handys wie das Galaxy Z Flip6 oder Motorola Razr 50 Ultra, die sich vertikal zusammenklappen und so im Taschenformat halbiert werden.'
     },
     {
-      term: 'Display-Crease (Falte)',
-      desc: 'Die sicht- und spürbare Vertiefung entlang der Faltachse. Moderne Tropfenscharniere reduzieren die Faltentiefe auf unter 0,15 mm, wodurch sie bei frontaler Draufsicht kaum wahrnehmbar ist.'
+      term: 'Display-Falte (Crease)',
+      desc: 'Die Wölbung in der Displaymitte. Bei modernen Tropfenscharnieren ist sie bei frontaler Draufsicht im eingeschalteten Zustand nahezu unsichtbar.'
     },
     {
-      term: 'Flex-Modus (Freistopp-Scharnier)',
-      desc: 'Fähigkeit des Scharniers, in Winkeln zwischen ca. 75° und 115° stabil geöffnet zu bleiben, um das Gerät wie einen Mini-Laptop auf den Tisch zu stellen (z. B. für Videokonferenzen oder Stativ-Fotos).'
+      term: 'Flex-Modus',
+      desc: 'Die Funktion, das Handy halb aufgeklappt (z. B. im 90-Grad-Winkel) auf den Tisch zu stellen – genial für freihändige Videoanrufe, Fotos ohne Stativ oder Kochrezepte.'
     },
     {
-      term: 'Sweep-Borsten (Sweeper Technology)',
-      desc: 'Mikroskopische Kohlefaser- oder Nylon-Bürsten im Scharniergehäuse, die Staub und Fussel bei jedem Auf- und Zuklappen mechanisch aus der Getriebekammer fegen.'
+      term: 'Außendisplay (Cover Screen)',
+      desc: 'Der äußere Bildschirm, der bei zugeklapptem Handy die volle Smartphone-Bedienung ermöglicht, ohne das Gerät jedes Mal öffnen zu müssen.'
     },
     {
-      term: 'DIN EN 60529 (IP-Schutzarten)',
-      desc: 'Internationale Prüfnorm zur Bestimmung des Gehäuseschutzes. IP48 bedeutet Schutz gegen feste Fremdkörper ≥ 1,0 mm (Ziffer 4) und Schutz gegen dauerndes Untertauchen in Wasser (Ziffer 8).'
+      term: 'IP48 Schutzklasse',
+      desc: 'Bedeutet Wasserdichtigkeit bei kurzem Untertauchen und erstmals Schutz vor Fremdkörpern ab 1 mm Durchmesser (z. B. Büroklammern oder Krümel).'
     }
   ];
 
@@ -38,138 +39,125 @@ export default function Ratgeber() {
       <div className="border-b border-slate-200 pb-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-50 border border-amber-200 text-amber-900 text-xs font-mono font-bold uppercase tracking-wider mb-3">
           <BookOpen className="w-3.5 h-3.5 text-amber-700" />
-          Technischer Leitfaden 2026
+          Kaufberatung &amp; Praxis-Tipps 2026
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight">
-          Ratgeber: Scharnier-Physik, Glas &amp; Pflege
+          Ratgeber: Alles, was du vor dem Kauf wissen musst
         </h1>
         <p className="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">
-          Fundierte Analysen zu Werkstoffkunde, Haltbarkeits-Zertifizierungen und der richtigen Pflege empfindlicher Falt-Displays.
+          Ehrliche Kauf-Tipps, Display-Pflege und Alltagserfahrungen: Worauf du bei Samsung, Google, Honor und Motorola wirklich achten solltest.
         </p>
       </div>
 
-      {/* Guide 1: UTG vs CPI */}
-      <article id="utg-guide" className="space-y-4 scroll-mt-24">
+      {/* Guide 1: Display & Knick */}
+      <article id="folie-tipp" className="space-y-4 scroll-mt-24">
         <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-amber-700">
-          <Layers className="w-4 h-4" />
-          Werkstoffkunde · Guide 01
+          <Smartphone className="w-4 h-4" />
+          Kauf-Tipp 01 · Display &amp; Schutz
         </div>
         <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-          UTG vs. CPI: Warum biegbares Glas elastisch ist
+          Display &amp; Knick: Stört die Falte im Alltag?
         </h2>
         
         <div className="prose prose-slate max-w-none text-sm leading-relaxed space-y-3 text-slate-700">
           <p>
-            In den ersten Generationen faltbarer Mobiltelefone (2019) kam reines <strong>Colorless Polyimide (CPI)</strong> zum Einsatz – ein robuster, transparenter Hochleistungskunststoff. CPI hatte jedoch zwei gravierende Nachteile: Eine unruhige, wellige Lichtreflexion und extreme Anfälligkeit für Kratzer.
+            Die am häufigsten gestellte Frage vor dem Kauf eines Falttelefons lautet: <em>„Sieht oder spürt man den Knick in der Mitte?“</em>
           </p>
           <p>
-            Moderne Falttelefone nutzen daher <strong>Ultra Thin Glass (UTG)</strong> von Herstellern wie Schott (Xensation Flex) oder Corning. Durch chemisches Ätzen wird Glas auf eine Dicke von nur <strong>30 bis 50 Mikrometer (µm)</strong> reduziert – dünner als ein handelsübliches Druckpapier (ca. 100 µm). Bei dieser geringen Materialstärke sinkt das Biegemoment so stark, dass das Glas Biegeradien von wenigen Millimetern ohne Bruch übersteht.
+            Die Antwort lautet: <strong>Im Alltag merkt man ihn nach ein bis zwei Tagen kaum noch.</strong> Wenn der Bildschirm eingeschaltet ist und man frontal darauf blickt (z. B. beim Lesen einer Website oder beim Streamen eines Videos), verschwindet die Falte optisch fast vollständig. Nur bei seitlichem Lichteinfall auf dunklem Hintergrund ist eine dezente Spiegelung zu sehen.
           </p>
           
-          <div className="p-4 rounded-xl bg-amber-50/80 border border-amber-300 text-xs text-amber-950 space-y-1 my-4">
+          <div className="p-4 rounded-xl bg-amber-50 border border-amber-300 text-xs text-amber-950 space-y-1 my-4">
             <strong className="font-extrabold block text-amber-900">
-              ⚠️ Wichtig: Mohs-Härteskala beachten!
+              Wichtigste Regel: Werksfolie NIEMALS entfernen!
             </strong>
             <p>
-              Weil Glas in dieser Dicke stoßempfindlich ist, laminieren alle Hersteller eine transparente <strong>PET-Schutzfolie</strong> werkseitig auf das Glas. Auf der Mohs-Härteskala erreicht diese Oberfläche nur <strong>Level 2 bis 3</strong> (vergleichbar mit Fingernägeln oder Kunststoffmünzen). Starker punktueller Druck mit spitzen Fingernägeln oder Stiften ohne gefederte Spitze kann bleibende Dellen hinterlassen.
+              Auf dem inneren Falt-Display befindet sich eine werksseitig aufgebrachte Spezialschutzfolie. Diese darf <strong>keinesfalls abgezogen werden</strong>, da sie das biegsame Glas schützt. Falls sich nach Jahren am Knick eine Blase bilden sollte, bieten Hersteller wie Samsung einen kostenlosen bzw. günstigen offiziellen Folientausch beim autorisierten Kundenservice an.
             </p>
           </div>
         </div>
       </article>
 
-      {/* Guide 2: Scharnier-Technik & Faltzyklen */}
-      <article id="scharnier-technik" className="space-y-4 scroll-mt-24 border-t border-slate-200 pt-10">
+      {/* Guide 2: Haltbarkeit */}
+      <article id="haltbarkeit-alltag" className="space-y-4 scroll-mt-24 border-t border-slate-200 pt-10">
         <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
           <ShieldCheck className="w-4 h-4" />
-          Mechanik &amp; Prüfung · Guide 02
+          Kauf-Tipp 02 · Scharnier &amp; Haltbarkeit
         </div>
         <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-          Wassertropfen-Scharniere &amp; TÜV/SGS Dauertests
+          Wie viele Jahre hält ein Falt-Smartphone im Alltag?
         </h2>
         
         <div className="prose prose-slate max-w-none text-sm leading-relaxed space-y-3 text-slate-700">
           <p>
-            Das Scharnier ist das mechanisch komplexeste Bauteil eines Falttelefons. Während U-förmige Scharniere früherer Generationen das Display stark quetschten, nutzen heutige Geräte sogenannte <strong>Tropfenscharniere (Waterdrop Hinge)</strong>.
+            Während die allererste Generation aus dem Jahr 2019 noch empfindlich war, sind aktuelle Modelle aus den Jahren 2024 bis 2026 extrem robust konstruiert. Unabhängige Prüfinstitute wie TÜV Rheinland und SGS testen die Gelenke mit <strong>200.000 bis 500.000 Faltungen</strong>.
           </p>
           <p>
-            Im Inneren des Scharniers befinden sich feine Nocken, Reibungsscheiben und Führungsbahnen aus <strong>Titan-Verbundwerkstoffen oder Flüssigmetall (Liquidmorphium)</strong>. Beim Schließen weicht die Mitte des Displays nach innen aus und formt eine Wassertropfen-Silhouette. Dadurch wird der Biegeradius verdoppelt und die Materialspannung im Glas dramatisch gesenkt.
-          </p>
-
-          <h3 className="text-lg font-bold text-slate-900 pt-2">
-            Wie testen Prüflabore wie TÜV Rheinland und SGS?
-          </h3>
-          <p>
-            Im automatisierten Dauertest öffnen und schließen Roboterarme das Gerät mit bis zu 2 Faltungen pro Sekunde. Neben Raumtemperatur-Tests (20 °C) werden Belastungen bei Extremtemperaturen (-20 °C Frost und +60 °C Hitze) sowie Falltests durchgeführt. Erst wenn nach 200.000 bis 500.000 Zyklen weder Pixelfehler noch Scharnierbrüche auftreten, wird das Prüfzertifikat erteilt.
+            Wer sein Handy 80 Mal am Tag auf- und zuklappt, erreicht in drei Jahren gerade einmal ca. 87.000 Faltungen – also weniger als ein Drittel des Prüflimits. Das Scharnier überlebt in den allermeisten Fällen problemlos den normalen Lebenszyklus des Akkus.
           </p>
         </div>
       </article>
 
-      {/* Guide 3: IP-Schutzklassen DIN EN 60529 */}
-      <article id="ip-schutzklassen" className="space-y-4 scroll-mt-24 border-t border-slate-200 pt-10">
+      {/* Guide 3: Wasser & Sand */}
+      <article id="wasser-sand" className="space-y-4 scroll-mt-24 border-t border-slate-200 pt-10">
         <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-blue-700">
-          <Wrench className="w-4 h-4" />
-          Normenlehre · Guide 03
+          <HelpCircle className="w-4 h-4" />
+          Kauf-Tipp 03 · Outdoor &amp; Urlaub
         </div>
         <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-          IP48 vs. IPX8: Dichtigkeit bei Falttelefonen
+          Wasserdicht &amp; Strandtauglich: Was muss man beachten?
         </h2>
         
         <div className="prose prose-slate max-w-none text-sm leading-relaxed space-y-3 text-slate-700">
           <p>
-            Nach der internationalen Norm <strong>DIN EN 60529</strong> setzt sich der IP-Code aus zwei Ziffern zusammen:
+            Die meisten modernen Foldables bieten die Wasserschutzklasse <strong>IPX8 oder IP48</strong>. Das bedeutet:
           </p>
           <ul className="list-disc pl-5 space-y-1 text-xs sm:text-sm">
-            <li><strong>Erste Kennziffer (z. B. 4 oder X):</strong> Schutz gegen Berührung und Eindringen fester Fremdkörper.</li>
-            <li><strong>Zweite Kennziffer (z. B. 8):</strong> Schutz gegen schädliches Eindringen von Wasser.</li>
+            <li><strong>Regen, Spritzwasser oder versehentliches Fallen ins Waschbecken:</strong> Absolut kein Problem, das Gerät ist wasserdicht abgedichtet.</li>
+            <li><strong>Strand &amp; feiner Meersand:</strong> Hier ist Vorsicht geboten! Feine Sandkörner (unter 0,5 mm) können in die Scharnier-Zwischenräume gelangen und beim Falten ein unangenehmes Knirschen verursachen. Am Strand das Handy am besten in einer Reißverschluss-Tasche aufbewahren.</li>
           </ul>
-          <p>
-            Ein Gerät mit <strong>IPX8</strong> (z. B. Google Pixel 9 Pro Fold, Honor Magic V3) ist bis zu 1,5 bzw. 2,5 Meter Tiefe in Süßwasser für 30 Minuten geschützt. Das „X“ bedeutet, dass keine offizielle Prüfung gegen Staub vorliegt.
-          </p>
-          <p>
-            Geräte mit <strong>IP48</strong> (z. B. Samsung Galaxy Z Fold6 / Z Flip6) haben erstmals eine Zertifizierung der Klasse 4: Schutz gegen feste Fremdkörper mit einem Durchmesser <strong>≥ 1,0 mm</strong>. Das schützt vor Büroklammerfragmenten oder groben Krümeln, jedoch <em>nicht</em> vor feinem Bausand oder Meersand (Partikelgröße 0,063 bis 0,5 mm).
-          </p>
         </div>
       </article>
 
-      {/* Guide 4: Display-Pflege & Garantieschutz */}
-      <article id="pflege-guide" className="space-y-4 scroll-mt-24 border-t border-slate-200 pt-10">
-        <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-red-700">
-          <AlertTriangle className="w-4 h-4" />
-          Pflege &amp; Garantie · Guide 04
-        </div>
-        <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-          Pflegehinweise &amp; Schutzfolien-Wechsel
-        </h2>
-        
-        <div className="prose prose-slate max-w-none text-sm leading-relaxed space-y-3 text-slate-700">
-          <p>
-            Damit Ihr Falttelefon viele Jahre störungsfrei funktioniert, sollten Sie folgende 3 Grundregeln einhalten:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-3">
-            <div className="p-3 bg-white rounded-xl border border-slate-200 text-xs">
-              <strong className="block text-slate-900 mb-1">1. Vor Schließen prüfen</strong>
-              <span>Niemals das Gerät zuklappen, wenn sich Münzen, Krümel oder Sandkörner auf dem Display befinden.</span>
-            </div>
-            <div className="p-3 bg-white rounded-xl border border-slate-200 text-xs">
-              <strong className="block text-slate-900 mb-1">2. Keine Folien abziehen</strong>
-              <span>Die interne Werksfolie niemals abknibbeln. Bei Blasenbildung vom autorisierten Service tauschen lassen.</span>
-            </div>
-            <div className="p-3 bg-white rounded-xl border border-slate-200 text-xs">
-              <strong className="block text-slate-900 mb-1">3. Nur Mikrofasertuch</strong>
-              <span>Keine chemischen Lösungsmittel oder Glasreiniger verwenden, die die oleophobe Beschichtung angreifen.</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      {/* Glossary Section */}
+      {/* Zubehör-Empfehlung */}
       <section className="border-t border-slate-200 pt-10">
-        <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-500 mb-4">
-          <FileText className="w-4 h-4" />
-          Fach-Glossar von A bis Z
+        <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-amber-700 mb-2">
+          <Zap className="w-4 h-4" />
+          Empfohlenes Zubehör
         </div>
-        <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6">
-          Begriffe der Falt-Technologie
+        <h2 className="text-2xl font-black text-slate-900 tracking-tight mb-4">
+          Die besten Hüllen &amp; Zubehörteile bei Amazon
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {FOLDABLE_ACCESSORIES.map((acc) => (
+            <div key={acc.id} className="p-4 rounded-xl bg-white border border-slate-200 flex flex-col justify-between shadow-2xs">
+              <div>
+                <div className="flex justify-between items-center text-xs font-bold text-slate-900 mb-1">
+                  <span>{acc.title}</span>
+                  <span className="text-amber-600 font-mono">{acc.priceEuro}</span>
+                </div>
+                <p className="text-xs text-slate-600 mb-2">{acc.description}</p>
+                <span className="text-[10px] text-slate-400 font-mono block mb-3">Passend für: {acc.compatibleWith}</span>
+              </div>
+              <a
+                href={getAmazonSearchUrl(acc.amazonQuery)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs shadow-2xs transition-transform active:scale-95"
+              >
+                <ShoppingBag className="w-3.5 h-3.5" />
+                <span>Angebot bei Amazon prüfen *</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Glossary */}
+      <section className="border-t border-slate-200 pt-10">
+        <h2 className="text-2xl font-black text-slate-900 tracking-tight mb-6">
+          Wichtigste Begriffe einfach erklärt
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -191,7 +179,7 @@ export default function Ratgeber() {
 
       {/* Citation Box */}
       <CitationBox
-        title="Technischer Leitfaden zu Falttelefonen: UTG-Display-Physik, Scharnier-Mechanik und DIN EN 60529"
+        title="Foldable-Kaufberatung: Tipps, Display-Pflege und Alltagstauglichkeit"
         canonicalUrl="https://falttelefon.de/ratgeber"
       />
 

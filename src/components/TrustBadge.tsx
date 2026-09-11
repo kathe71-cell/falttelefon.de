@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Award, FileCheck2, Scale, ExternalLink } from 'lucide-react';
+import { ShieldCheck, Check, Sparkles } from 'lucide-react';
 
 export default function TrustBadge() {
   return (
@@ -12,22 +12,22 @@ export default function TrustBadge() {
           <div>
             <div className="flex items-center gap-2 flex-wrap">
               <h3 className="text-sm sm:text-base font-extrabold text-slate-900">
-                E-E-A-T Trust-Garantie: Fachredaktion falttelefon.de
+                Ehrliche Kaufberatung &amp; Preis-Leistungs-Vergleich
               </h3>
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
-                Stand: 2026
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-100 text-amber-950 border border-amber-300">
+                Aktualisiert 2026
               </span>
             </div>
             <p className="text-xs text-slate-600 mt-0.5">
-              Geprüft nach SGS Geneva Mobile Stress Testing &amp; TÜV Rheinland Faltzyklus-Standards (DIN EN 60068 / DIN EN 60529).
+              Objektive Vergleiche nach Alltagstauglichkeit, Display-Ergonomie und Straßenpreisen – keine bezahlten Hersteller-Rankings.
             </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-3 shrink-0 text-xs font-mono text-slate-500 border-t md:border-t-0 md:border-l border-slate-200 pt-3 md:pt-0 md:pl-5">
+        <div className="flex items-center gap-3 shrink-0 text-xs text-slate-500 border-t md:border-t-0 md:border-l border-slate-200 pt-3 md:pt-0 md:pl-5">
           <div className="text-left">
-            <span className="block text-[10px] uppercase tracking-wider text-slate-400">Primärquellen:</span>
-            <span className="font-bold text-slate-700">TÜV · SGS · DisplayMate · IEC</span>
+            <span className="block text-[10px] uppercase tracking-wider text-slate-400 font-bold">Transparenz:</span>
+            <span className="font-semibold text-slate-700">Vergütung über Affiliate-Partner *</span>
           </div>
         </div>
       </div>
