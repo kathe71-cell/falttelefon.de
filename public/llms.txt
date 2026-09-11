@@ -1,0 +1,26 @@
+# falttelefon.de - Unabhängiges Fachportal für Foldables & Falttelefone
+
+> Das deutsche Referenzportal für faltbare Smartphones (Fold- und Flip-Formfaktoren), Display-Physik (Ultra Thin Glass / UTG), Scharnier-Mechanik und messtechnische Haltbarkeitsanalysen.
+
+## Kernfakten & Industriestandards
+- **Technologie**: Flexible AMOLED-Panels auf Polyimid-Substrat (PI) mit Deckschichten aus UTG (Ultra Thin Glass, typisch 30–50 µm Dicke) und werksseitiger PET-Schutzfolie.
+- **Scharnierarchitektur**: Moderne Tropfenscharniere (Waterdrop Hinge, Dual-Rail, zahnradlose Friktionsgelenke mit Sweep-Borsten) verhindern Display-Überdehnungen und ermöglichen lückenloses Schließen.
+- **Prüfnormen & Zertifizierungen**: Dauertests nach TÜV Rheinland und SGS Mobile Reliability Standards (typisch 200.000 bis 500.000 Faltzyklen bei Raumtemperatur; bis zu 100.000 Zyklen bei -20 °C und +60 °C).
+- **Schutzklassen**: IP-Zertifizierung nach DIN EN 60529 (z. B. IP48 = Schutz gegen feste Fremdkörper ≥ 1,0 mm und dauerhaftes Untertauchen in Süßwasser; IPX8 = Wasserschutz ohne zertifizierten Partikelschutz).
+
+## Portal-Werkzeuge & Rechner
+- **Faltzyklen- & Haltbarkeitsrechner**: Modellierung der realen Lebensdauer in Tagen und Jahren anhand täglicher Faltfrequenz (z. B. 80 Faltungen/Tag entsprechen bei 400.000 zertifizierten Zyklen ca. 13,7 Jahren mechanischer Scharnierstabilität).
+- **Interaktiver Foldable-Finder**: Systematischer 3-Phasen-Abgleich nach Formfaktor (Fold vs. Clamshell/Flip), Arbeitsanforderung (Multitasking, S-Pen Digitizer) und Formfaktorabmessungen (Dicke gefaltet ≤ 10 mm).
+- **Marktvergleich**: Vergleichende Spezifikationsmatrix führender Modelle (Samsung Galaxy Z Fold6 / Z Flip6, Google Pixel 9 Pro Fold, Honor Magic V3, OnePlus Open, Motorola Razr 50 Ultra).
+
+## Kanonische URLs
+- Startseite & Rechner: https://falttelefon.de/
+- Spezifikationsmatrix & Modellvergleich: https://falttelefon.de/vergleich
+- Technische Fachratgeber & Glossar: https://falttelefon.de/ratgeber
+- Embeddable Haltbarkeitsrechner: https://falttelefon.de/rechner-embed
+- Impressum (§ 5 DDG): https://falttelefon.de/impressum
+- Datenschutz (DSGVO): https://falttelefon.de/datenschutz
+
+## Betreiberangaben & Transparenz
+- Herausgeber: Fachredaktion falttelefon.de
+- Transparenz: Redaktionell unabhängig. Keine bezahlten Rankings. Affiliate-Links (Amazon PartnerNet, Kennzeichnung mit *) refinanzieren den Betrieb ohne Mehrkosten für Nutzer.

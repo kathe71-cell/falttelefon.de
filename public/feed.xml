@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>falttelefon.de - Unabhängiges Fachportal für Foldables &amp; Falt-Smartphones</title>
+    <link>https://falttelefon.de</link>
+    <description>Technische Analysen, Haltbarkeits-Rechner, Scharnier-Physik und objektive Marktübersichten zu Falt- und Klapp-Smartphones.</description>
+    <language>de-DE</language>
+    <lastBuildDate>Fri, 11 Sep 2026 10:00:00 +0200</lastBuildDate>
+    <atom:link href="https://falttelefon.de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UTG vs. CPI: Warum modernes Faltglas biegbar ist</title>
+      <link>https://falttelefon.de/ratgeber#utg-guide</link>
+      <guid>https://falttelefon.de/ratgeber#utg-guide</guid>
+      <pubDate>Fri, 11 Sep 2026 09:00:00 +0200</pubDate>
+      <description>Werkstoffanalyse zu Ultra Thin Glass (30 Mikrometer Dicke), Mohs-Härte Level 2-3 und Schutzschichten aus Polyethylenterephthalat (PET).</description>
+    </item>
+    <item>
+      <title>Wassertropfen-Scharniere im Härtetest: 400.000 Faltungen nach SGS &amp; TÜV</title>
+      <link>https://falttelefon.de/ratgeber#scharnier-technik</link>
+      <guid>https://falttelefon.de/ratgeber#scharnier-technik</guid>
+      <pubDate>Thu, 10 Sep 2026 14:30:00 +0200</pubDate>
+      <description>Wie Tropfenscharniere den Biegeradius vergrößern, das Falten ohne Spalt ermöglichen und Sweep-Borsten das Eindringen von Staubpartikeln hemmen.</description>
+    </item>
+    <item>
+      <title>IP48 vs. IPX8: Schutzklassen bei faltbaren Mobiltelefonen</title>
+      <link>https://falttelefon.de/ratgeber#ip-schutzklassen</link>
+      <guid>https://falttelefon.de/ratgeber#ip-schutzklassen</guid>
+      <pubDate>Wed, 09 Sep 2026 11:15:00 +0200</pubDate>
+      <description>Normerklärung nach DIN EN 60529: Was die Ziffer 4 für Fremdkörperschutz ab 1 Millimeter in der Scharnier-Mechanik bedeutet.</description>
+    </item>
+  </channel>
+</rss>

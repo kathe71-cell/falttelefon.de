@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#0f172a"/>
+  <!-- Left Screen Half -->
+  <path d="M7 6H14.5C15.05 6 15.5 6.45 15.5 7V25C15.5 25.55 15.05 26 14.5 26H7C6.45 26 6 25.55 6 25V7C6 6.45 6.45 6 7 6Z" fill="#f8fafc" fill-opacity="0.9"/>
+  <!-- Right Screen Half tilted 15 deg look -->
+  <path d="M16.5 7C16.5 6.45 16.95 6 17.5 6H25C25.55 6 26 6.45 26 7V25C26 25.55 25.55 26 25 26H17.5C16.95 26 16.5 25.55 16.5 25V7Z" fill="#f59e0b"/>
+  <!-- Hinge Axis Indicator -->
+  <line x1="16" y1="5" x2="16" y2="27" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+</svg>

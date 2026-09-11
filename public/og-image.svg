@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Geometric Grid Pattern -->
+  <g stroke="#334155" stroke-width="1" opacity="0.25">
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+  </g>
+
+  <!-- Brand Badge -->
+  <rect x="100" y="80" width="220" height="36" rx="18" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="120" y="103" fill="#f59e0b" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="14" letter-spacing="2">FACHPORTAL 2026</text>
+  
+  <!-- Main Heading -->
+  <text x="100" y="210" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="76" letter-spacing="-2">falttelefon<tspan fill="url(#amberGrad)">.de</tspan></text>
+  <text x="100" y="275" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="500" font-size="28">Unabhängiger Leitfaden, Haltbarkeits-Rechner &amp; Modellvergleich</text>
+
+  <!-- Feature Cards -->
+  <g transform="translate(100, 340)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="310" height="180" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="44" fill="#38bdf8" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="14" letter-spacing="1">INTERAKTIVES TOOL</text>
+    <text x="24" y="82" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="800" font-size="22">Faltzyklen-Rechner</text>
+    <text x="24" y="116" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="14">SGS &amp; TÜV-Simulation: Jahre bis</text>
+    <text x="24" y="136" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="14">500.000 Faltungen berechnen</text>
+    
+    <!-- Card 2 -->
+    <rect x="340" y="0" width="310" height="180" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="364" y="44" fill="#f59e0b" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="14" letter-spacing="1">SPEZIFIKATIONEN</text>
+    <text x="364" y="82" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="800" font-size="22">Markt-Matrix 2026</text>
+    <text x="364" y="116" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="14">Dicke, Gewicht, Wassertropfen-</text>
+    <text x="364" y="136" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="14">Scharniere &amp; IP-Schutzgrade</text>
+
+    <!-- Card 3 -->
+    <rect x="680" y="0" width="310" height="180" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="704" y="44" fill="#34d399" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="14" letter-spacing="1">E-E-A-T RATGEBER</text>
+    <text x="704" y="82" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="800" font-size="22">UTG &amp; Scharnier-Physik</text>
+    <text x="704" y="116" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="14">Biegbares Glas, Mohs-Härte &amp;</text>
+    <text x="704" y="136" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-weight="400" font-size="14">Schutzfolien-Pflegeleitfaden</text>
+  </g>
+
+  <!-- Footer strip -->
+  <text x="100" y="580" fill="#64748b" font-family="-apple-system, system-ui, monospace" font-size="13">§ 5 DDG · DSGVO-konform · Zero-CDN · Geprüfte E-E-A-T Fachredaktion</text>
+</svg>
