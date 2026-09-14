@@ -10,15 +10,7 @@ import RechnerEmbed from './pages/RechnerEmbed';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
+import ScrollToTop from './components/ScrollToTop';
 
 function LayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -28,6 +20,7 @@ function LayoutWrapper({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
@@ -36,7 +29,6 @@ export default function App() {
   return (
     <Router>
       <VercelAnalytics />
-      <ScrollToTop />
       <Routes>
         {/* Embed route without standard navbar and footer */}
         <Route path="/rechner-embed" element={<RechnerEmbed />} />
