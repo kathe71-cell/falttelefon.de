@@ -12,7 +12,7 @@ import Datenschutz from './pages/Datenschutz';
 
 import ScrollToTop from './components/ScrollToTop';
 
-function LayoutWrapper({ children }: { children: React.ReactNode }) {
+export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col justify-between bg-slate-50 text-slate-900 selection:bg-amber-200 selection:text-amber-950 font-sans">
       <Navbar />
@@ -25,65 +25,71 @@ function LayoutWrapper({ children }: { children: React.ReactNode }) {
   );
 }
 
+export function AppRoutes() {
+  return (
+    <Routes>
+      {/* Embed route without standard navbar and footer */}
+      <Route path="/rechner-embed" element={<RechnerEmbed />} />
+
+      {/* Standard pages with layout */}
+      <Route
+        path="/"
+        element={
+          <LayoutWrapper>
+            <Home />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/vergleich"
+        element={
+          <LayoutWrapper>
+            <Vergleich />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/ratgeber"
+        element={
+          <LayoutWrapper>
+            <Ratgeber />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/impressum"
+        element={
+          <LayoutWrapper>
+            <Impressum />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/datenschutz"
+        element={
+          <LayoutWrapper>
+            <Datenschutz />
+          </LayoutWrapper>
+        }
+      />
+      {/* Fallback route */}
+      <Route
+        path="*"
+        element={
+          <LayoutWrapper>
+            <Home />
+          </LayoutWrapper>
+        }
+      />
+    </Routes>
+  );
+}
+
 export default function App() {
   return (
     <Router>
       <VercelAnalytics />
-      <Routes>
-        {/* Embed route without standard navbar and footer */}
-        <Route path="/rechner-embed" element={<RechnerEmbed />} />
-
-        {/* Standard pages with layout */}
-        <Route
-          path="/"
-          element={
-            <LayoutWrapper>
-              <Home />
-            </LayoutWrapper>
-          }
-        />
-        <Route
-          path="/vergleich"
-          element={
-            <LayoutWrapper>
-              <Vergleich />
-            </LayoutWrapper>
-          }
-        />
-        <Route
-          path="/ratgeber"
-          element={
-            <LayoutWrapper>
-              <Ratgeber />
-            </LayoutWrapper>
-          }
-        />
-        <Route
-          path="/impressum"
-          element={
-            <LayoutWrapper>
-              <Impressum />
-            </LayoutWrapper>
-          }
-        />
-        <Route
-          path="/datenschutz"
-          element={
-            <LayoutWrapper>
-              <Datenschutz />
-            </LayoutWrapper>
-          }
-        />
-        {/* Fallback route */}
-        <Route
-          path="*"
-          element={
-            <LayoutWrapper>
-              <Home />
-            </LayoutWrapper>
-          }
-        />
-      </Routes>
+      <AppRoutes />
     </Router>
   );
 }
