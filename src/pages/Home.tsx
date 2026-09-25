@@ -310,10 +310,10 @@ export default function Home() {
       <section id="rechner" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
         <div className="mb-4">
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            Haltbarkeits-Check: Wie viele Jahre hält dein Falt-Handy?
+            Haltbarkeits-Check: Rechnerische Lebensdauer &amp; Falt-Zyklen
           </h2>
           <p className="text-slate-600 text-sm mt-1">
-            Viele Käufer fragen sich: Leiert das Scharnier aus? Berechne hier, wie viele Jahre dein Wunschmodell bei deiner täglichen Klapp-Häufigkeit problemlos durchhält.
+            Rechnerische Modellermittlung: Wie belasten tägliche Klapp-Vorgänge das Scharnier? Berechne hier auf Basis zertifizierter herstellerüblicher Testzyklen die rechnerische Lebensdauer bei deiner individuellen Nutzung.
           </p>
         </div>
         <DurabilityCalculator />

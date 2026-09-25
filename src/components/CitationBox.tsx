@@ -14,7 +14,7 @@ export default function CitationBox({
 }: CitationBoxProps) {
   const [copied, setCopied] = useState(false);
 
-  const citationText = `falttelefon.de Fachredaktion (${lastUpdated.split(' ')[1] || '2026'}). ${title}. falttelefon.de - Unabhängiges Fachportal für Foldables & Falt-Smartphones. ${canonicalUrl}`;
+  const citationText = `falttelefon.de Redaktion (${lastUpdated.split(' ')[1] || '2026'}). ${title}. falttelefon.de - Unabhängiges Informationsportal für Foldables & Falt-Smartphones. ${canonicalUrl}`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(citationText);

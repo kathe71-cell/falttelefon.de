@@ -146,7 +146,7 @@ export default function FoldableFinder() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="px-2.5 py-0.5 rounded bg-amber-500 text-slate-950 font-bold text-xs">
-                  Beste Empfehlung
+                  Passt am besten zu Ihren angegebenen Prioritäten
                 </span>
                 <span className="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono text-xs">
                   {topMatch.category === 'fold' ? 'Book-Style Fold' : 'Clamshell Flip'}

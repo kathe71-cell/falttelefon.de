@@ -200,13 +200,13 @@ export default function DurabilityCalculator({ isEmbed = false }: CalculatorProp
           
           <div>
             <span className="block text-xs font-mono tracking-widest text-amber-400 uppercase mb-1">
-              Theoretische Scharnier-Lebensdauer
+              Rechnerischer Labor-Testwert
             </span>
             <div className="text-4xl sm:text-5xl font-black tracking-tight text-white font-mono">
-              {calculation.years} <span className="text-xl font-normal text-slate-400">Jahre</span>
+              ca. {calculation.years} <span className="text-xl font-normal text-slate-400">Jahre</span>
             </div>
             <div className="text-xs text-slate-400 mt-1">
-              entspricht ca. {calculation.totalDays.toLocaleString('de-DE')} Tagen Dauernutzung
+              Bei {dailyFolds} Faltungen/Tag entspricht die Prüfnorm von {certifiedCycles.toLocaleString('de-DE')} Zyklen rechnerisch ca. {calculation.years} Jahren.
             </div>
           </div>
 
@@ -218,22 +218,19 @@ export default function DurabilityCalculator({ isEmbed = false }: CalculatorProp
               {calculation.foldsIn3Years.toLocaleString('de-DE')}
             </div>
             <div className="text-xs text-slate-400 mt-1">
-              {calculation.cycleUsagePercentIn3Years}% des Prüflimits aufgebraucht
+              {calculation.cycleUsagePercentIn3Years}% des Labor-Prüflimits aufgebraucht
             </div>
           </div>
 
           <div>
             <span className="block text-xs font-mono tracking-widest text-blue-400 uppercase mb-1">
-              Scharnier-Verlässlichkeit
+              Scharnier-Belastbarkeit (Labor)
             </span>
-            <div className="text-2xl sm:text-3xl font-bold tracking-tight text-emerald-400 flex items-center justify-center sm:justify-start gap-2">
-              <span>99,4 %</span>
-              <span className="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-normal">
-                sehr hoch
-              </span>
+            <div className="text-xl sm:text-2xl font-bold tracking-tight text-emerald-400 flex items-center justify-center sm:justify-start gap-2">
+              <span>{certifiedCycles >= 400000 ? 'Sehr hohe Belastbarkeit' : 'Standard-Belastbarkeit'}</span>
             </div>
             <div className="text-xs text-slate-400 mt-1">
-              Mechanik überlebt typischen Akku-Lebenszyklus
+              Zertifizierter Scharnier-Testwert unter genormten Prüfbedingungen
             </div>
           </div>
 

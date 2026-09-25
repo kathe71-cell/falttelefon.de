@@ -64,10 +64,6 @@ export default function Impressum() {
 
         <div className="pt-4 border-t border-slate-100 text-xs text-slate-600 space-y-2">
           <div>
-            <strong className="text-slate-900">Umsatzsteuer-Status:</strong><br />
-            Gemäß § 19 UStG wird als Kleinunternehmer keine Umsatzsteuer erhoben und ausgewiesen.
-          </div>
-          <div>
             <strong className="text-slate-900">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br />
             Jens Kathe, Hansastraße 6, 34119 Kassel
           </div>
