@@ -1,6 +1,5 @@
 import React from 'react';
 import CitationBox from '../components/CitationBox';
-import AdSensePlaceholder from '../components/AdSensePlaceholder';
 import { FOLDABLE_ACCESSORIES, getAmazonSearchUrl } from '../data/foldables';
 import { BookOpen, ShieldCheck, ShoppingBag, CheckCircle2, HelpCircle, Smartphone, Zap } from 'lucide-react';
 
@@ -174,8 +173,6 @@ export default function Ratgeber() {
         </div>
       </section>
 
-      {/* AdSense Placement */}
-      <AdSensePlaceholder slotId="5566778899" />
 
       {/* Citation Box */}
       <CitationBox

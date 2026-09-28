@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Lock, EyeOff, Server, Cookie } from 'lucide-react';
+import { Shield, Lock, EyeOff, Server } from 'lucide-react';
 
 export default function Datenschutz() {
   return (
@@ -62,26 +62,11 @@ export default function Datenschutz() {
           </p>
         </div>
 
-        {/* 4. Google AdSense */}
+       
+                {/* 4. Amazon PartnerNet */}
         <div className="pt-4 border-t border-slate-100">
           <h2 className="text-base font-extrabold text-slate-900 mb-2">
-            4. Google AdSense
-          </h2>
-          <p>
-            Diese Website bindet Werbeanzeigen über Google AdSense ein, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).
-          </p>
-          <p className="mt-2">
-            Google AdSense verwendet Technologien zur Auslieferung relevanter Anzeigen. Bei der Einblendung können Cookies und Web Beacons (unsichtbare Grafiken) verwendet werden, um Daten über den Besucherverkehr auf diesen Seiten zu sammeln. Sie können die Speicherung von Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern.
-          </p>
-          <p className="mt-2 text-xs text-slate-500 font-mono">
-            Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. Art. 6 Abs. 1 lit. f DSGVO.
-          </p>
-        </div>
-
-        {/* 5. Amazon PartnerNet */}
-        <div className="pt-4 border-t border-slate-100">
-          <h2 className="text-base font-extrabold text-slate-900 mb-2">
-            5. Amazon EU-Partnerprogramm
+            4. Amazon EU-Partnerprogramm
           </h2>
           <p>
             Der Betreiber ist Teilnehmer des Partnerprogramms von Amazon EU (Store-ID: esstri-21 / Tracking-ID: falttelefon.de-21). Wenn Sie einen mit Sternchen (*) gekennzeichneten Partnerlink anklicken und anschließend bei Amazon.de einkaufen, setzt Amazon ggf. ein Session-Cookie, um die Herkunft der Bestellung nachzuvollziehen.
@@ -91,10 +76,10 @@ export default function Datenschutz() {
           </p>
         </div>
 
-        {/* 6. Rechte der Betroffenen */}
+        {/* 5. Rechte der Betroffenen */}
         <div className="pt-4 border-t border-slate-100">
           <h2 className="text-base font-extrabold text-slate-900 mb-2">
-            6. Ihre Betroffenenrechte nach der DSGVO
+            5. Ihre Betroffenenrechte nach der DSGVO
           </h2>
           <p>
             Sie haben gegenüber dem Verantwortlichen das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO) und Einschränkung der Verarbeitung (Art. 18 DSGVO). Zudem steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutz-Aufsichtsbehörde zu.

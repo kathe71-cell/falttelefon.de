@@ -1,7 +1,6 @@
 import React from 'react';
 import SpecMatrix from '../components/SpecMatrix';
 import CitationBox from '../components/CitationBox';
-import AdSensePlaceholder from '../components/AdSensePlaceholder';
 import { TableProperties, ShoppingBag, Sparkles } from 'lucide-react';
 import { getAmazonSearchUrl } from '../data/foldables';
 
@@ -49,8 +48,6 @@ export default function Vergleich() {
         </p>
       </div>
 
-      {/* AdSense Placement */}
-      <AdSensePlaceholder slotId="1122334455" />
 
       {/* Citation Box */}
       <CitationBox

@@ -5,7 +5,6 @@ import DurabilityCalculator from '../components/DurabilityCalculator';
 import FoldableFinder from '../components/FoldableFinder';
 import TrustBadge from '../components/TrustBadge';
 import EmbedWidgetModal from '../components/EmbedWidgetModal';
-import AdSensePlaceholder from '../components/AdSensePlaceholder';
 import { FOLDABLES_DATA, FOLDABLE_ACCESSORIES, getAmazonProductUrl, getAmazonSearchUrl } from '../data/foldables';
 import {
   ShoppingBag,
@@ -463,7 +462,6 @@ export default function Home() {
 
       {/* 10. ADSENSE PLACEMENT */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AdSensePlaceholder slotId="9988776655" />
       </section>
 
       {/* 11. FAQ ACCORDION */}
