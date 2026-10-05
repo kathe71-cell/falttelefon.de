@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Mail, Phone, MapPin, Scale, ShoppingBag } from 'lucide-react';
+import { ShieldCheck, Mail, MapPin, Scale, ShoppingBag } from 'lucide-react';
 
 export default function Impressum() {
   return (
@@ -48,18 +48,6 @@ export default function Impressum() {
             </a>
           </div>
 
-          <div>
-            <span className="block text-xs font-mono text-slate-400 uppercase font-semibold mb-1">
-              Telefonische Erreichbarkeit:
-            </span>
-            <a
-              href="tel:+4917866526230"
-              className="text-slate-800 hover:text-slate-950 font-semibold inline-flex items-center gap-1.5"
-            >
-              <Phone className="w-4 h-4 text-slate-400" />
-              +49 178 6652623
-            </a>
-          </div>
         </div>
 
         <div className="pt-4 border-t border-slate-100 text-xs text-slate-600 space-y-2">
