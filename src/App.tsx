@@ -1,3 +1,4 @@
+import ProjektuebernahmePage from "./pages/ProjektuebernahmePage.tsx";
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -81,7 +82,8 @@ export function AppRoutes() {
           </LayoutWrapper>
         }
       />
-    </Routes>
+      <Route path="/projektuebernahme" element={<ProjektuebernahmePage />} />
+</Routes>
   );
 }
 
